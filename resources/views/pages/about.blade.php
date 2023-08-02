@@ -4,3 +4,5 @@
 @section('content')
 <div>About</div>
 @endsection
+
+@section('title', 'About | Practice')
