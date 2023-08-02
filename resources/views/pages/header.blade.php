@@ -1,12 +1,13 @@
-<nav class="border-b border-gray-800">
-  <div class="container mx-auto flex items-center justify-between px-4 py-6">
-    <ul class="flex items-center">
-      <li class="px-4 hover:text-gray-300">
-        <a href="/">Home</a>
-      </li>
-      <li class="px-4 hover:text-gray-300">
-        <a href="/about">About</a>
-      </li>
-    </ul>
-  </div>
+<nav class="flex justify-center border-b border-gray-600">
+  <ul class="flex m-7">
+    <li class="mr-3">
+      <a class="inline-block py-1 px-3 rounded {{ Request::is('/') ? 'bg-blue-500 text-white' : 'hover:border hover:border-blue-500 text-blue-500' }}" href="/">Home</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-3 rounded {{ Request::is('about') ? 'bg-blue-500 text-white' : 'hover:border hover:border-blue-500 text-blue-500' }}" href="/about">About Us</a>
+    </li>
+    <li class="mr-3">
+      <a class="inline-block py-1 px-3 text-gray-400 cursor-not-allowed" href="#">Disabled Pill</a>
+    </li>
+  </ul>
 </nav>
