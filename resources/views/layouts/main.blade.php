@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-  <html lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/app.css">
-    <title>Home | Practice</title>
+    <title>@yield('title')</title>
   </head>
-  <body>
-    <div>
+  <body class="bg-gray-900 text-white font-sans">
       <header>
-        @include('page.navbar')
+        @include('pages.header')
       </header>
-      <div class="h-screen flex align-bottom">
-        <h1 class="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-        <p class="underline">{{ $name }}</p>
-      </div>
+    <div>
+      @yield('content')
     </div>
+    <footer>
+      @include('pages.footer')
+    </footer>
   </body>
-  
 </html>
