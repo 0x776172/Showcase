@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/app.css">
     <title>@yield('title')</title>
   </head>
-  <body class="bg-gray-900 text-white font-sans">
-      <header>
-        @include('pages.header')
-      </header>
+  <body class="bg-gray-900 text-white font-sans relative">
+    <header class="border-b border-gray-600">
+      @include('pages.header')
+    </header>
     <div>
       @yield('content')
     </div>
-    <footer>
+    <footer class="bottom-0 relative w-full border-t border-gray-600">
       @include('pages.footer')
     </footer>
   </body>

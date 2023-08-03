@@ -2,7 +2,7 @@
 @php($inactive = 'hover:border-blue-500 text-blue-400')
 @php($base = 'inline-block py-1 px-3 rounded border border-transparent font-semibold')
 
-<nav class="flex justify-center border-b border-gray-600">
+<nav class="flex justify-center text-lg">
   <ul class="flex m-7">
     <li class="mr-4">
       <a class="{{ $base }} {{ Request::is('/') ? $active : $inactive }}" href="/">Home</a>
